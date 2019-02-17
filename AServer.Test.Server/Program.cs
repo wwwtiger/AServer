@@ -16,7 +16,8 @@ namespace AServer.Test.Server
             {
                 var server = new Agile.AServer.Server();
                 server.EnableCors(new CorsOption() {
-                    AccessControlAllowOrigins = "http://localhost:5000",
+                    //AccessControlAllowOrigins = "http://localhost:5000",
+                    AccessControlAllowOrigins = "*",
                     AccessControlAllowHeaders = "auth",
                     AccessControlAllowMethods = "GET,POST,PUT,DELETE"
                 });
